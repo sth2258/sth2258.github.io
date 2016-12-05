@@ -1870,11 +1870,11 @@
 			background: #10a0d5;;
 			color: #fff;
 			border-radius: 6px;
-			font-family: 'FontAwesome', serif;
+			/*font-family: 'FontAwesome', serif;*/
 			font-weight: 400;
 			padding: 0.25em 0.2em 0.25em 0.2em;
 			font-size: 3.25em;
-			letter-spacing: 0.05em;
+			letter-spacing: 0.02em;
 			display: inline-block;
 			vertical-align: middle;
 		}
@@ -1908,8 +1908,8 @@
 				-webkit-transition: background-color .25s ease-in-out;
 				-ms-transition: background-color .25s ease-in-out;
 				transition: background-color .25s ease-in-out;
-				font-weight: 800;
-				letter-spacing: 0.025em;
+				font-weight: 600;
+				/*letter-spacing: 0.025em;*/
 				color: #696969;
 				text-decoration: none;
 				border-radius: 6px;
