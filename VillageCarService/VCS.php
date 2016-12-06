@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . '/twilio-php-master/Twilio/autoload.php';
+use Twilio\Rest\Client;
 
 function sendMail($from, $to, $subject, $message){
 	
@@ -133,4 +135,37 @@ function constructReservationEmail($name, $email, $phone, $pickupDate, $pickupTi
 	return $message;
 }
 
-?>
+function callSomebody(){
+	// Require the bundled autoload file - the path may need to change
+	// based on where you downloaded and unzipped the SDK
+	
+	include 'config.php';
+	
+	// Use the REST API Client to make requests to the Twilio REST API
+	
+
+	// Your Account SID and Auth Token from twilio.com/console
+	$sid = $voiceAccountSid;
+	$token = $voiceAccountSecret;
+	$client = new Client($sid, $token);
+
+	try {
+        // Initiate a new outbound call
+        $call = $client->account->calls->create(
+            // Step 4: Change the 'To' number below to whatever number you'd like 
+            // to call.
+            $voiceTo,
+
+            // Step 5: Change the 'From' number below to be a valid Twilio number 
+            // that you've purchased or verified with Twilio.
+            $voiceFrom,
+
+            // Step 6: Set the URL Twilio will request when the call is answered.
+            array("url" => $voiceUrl)
+        );
+        //echo "Started call: " . $call->sid;
+    } catch (Exception $e) {
+        echo "Error: " . $e->getMessage();
+    }
+
+}

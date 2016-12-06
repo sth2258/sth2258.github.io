@@ -16,6 +16,7 @@ if(!empty($_POST) && $_POST['g-recaptcha-response'] == ''){
 	$emailBody = constructReservationEmail($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['pickupDate'], $_POST['pickupTime'], $_POST['passangers'], $_POST['pickupAddress'], $_POST['pickupCity'], $_POST['destinationAddress'], $_POST['destinationCity'], $_POST['addlInfo'], $_POST['carSeat'], $_POST['boosterSeat'], $luggage);
 	sendMail($sender, $_POST['email'], "Village Car Service - Reservation Request", $emailBody);
 	sendMail($sender, $adminRecip, "Village Car Service - Reservation Request", $emailBody);
+	callSomebody();
 	//also send robocall
 	$good=true;
 }
