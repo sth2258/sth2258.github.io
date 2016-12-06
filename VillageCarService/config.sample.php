@@ -1,6 +1,6 @@
 <?php
 $sender="root@localhost";
-$adminRecip="steve.t.haber+serverside@gmail.com";
+$adminRecip="serverside@gmail.com";
 $voiceFrom="+12342342342";
 $voiceTo="+12342342342";
 $voiceUrl="http://somewhere/VillageCarService/callback.php";
