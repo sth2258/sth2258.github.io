@@ -28,46 +28,9 @@ if(!empty($_POST) && $_POST['g-recaptcha-response'] == ''){
 	<body class="no-sidebar">
 		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
-
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="index.html">Village Car Service</a></h1>
-								
-							</div>
-
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="index.html">Home</a></li>
-									<li>
-										<a href="about.html">About Us</a>
-										<ul>
-											<li><a href="about.html#ourbackground">Our Mission</a></li>
-											<li><a href="about.html#employment">Employment Oppurtunities</a></li>
-											<li><a href="about.html#testimonials">Testimonials</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="services.html">Services Provided</a>
-									</li>
-									
-									<li><a href="reservations.php">Reservations</a></li>
-									<li>
-										<a href="accounts.php">Accounts</a>
-										<ul>
-											<li><a href="accounts.php#personal">Personal Accounts</a></li>
-											<li><a href="accounts.php#corporate">Corporate Accounts</a></li>
-										</ul>
-									</li>
-									<li><a href="contact.php">Contact</a></li>
-								</ul>
-							</nav>
-
-					</header>
-				</div>
+			<?php
+				include('header.php')
+			?>
 
 			<!-- Main -->
 				<div id="main-wrapper">
@@ -119,41 +82,9 @@ if(!empty($_POST) && $_POST['g-recaptcha-response'] == ''){
 					</div>
 				</div>
 
-			<!-- Footer -->
-				<div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="3u 6u$(medium) 12u$(small)">
-
-								<!-- Contact -->
-									<section class="widget contact last">
-										<h3>Contact Us</h3>
-										<ul>
-											<li><a href="#" class="icon fa-envelope-o"><span class="label">Mail</span></a></li>
-											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
-										</ul>
-										<p>416 Sunrise Highway<br />
-										Lynbrook, NY 11563<br />
-										(516) 764-8888</p>
-									</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; 2016 VillageCarService. All rights reserved</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
-				</div>
-
-			</div>
+			<?php
+				include('footer.php');
+			?>
 
 		<!-- Scripts -->
 
