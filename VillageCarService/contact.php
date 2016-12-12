@@ -2,15 +2,15 @@
 
 include 'config.php';
 include 'VCS.php';
-//print_r($_POST);
 
 if(!empty($_POST) && $_POST['g-recaptcha-response'] == ''){
 	$error = "Please respond to the captcha image";
 }else if (!empty($_POST)){
 	
 	$emailBody = constructContactEmail($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['addionalInfo']);
-	sendMail($sender, $_POST['email'], "Village Car Service - Website Contact", $emailBody);
-	sendMail($sender, $adminRecip, "Village Car Service - Website Contact", $emailBody);
+	$ret = sendMail($_POST['email'], "Website contact - Village Car Service", $emailBody);
+	$ret = sendMail($adminRecip, "Website contact - Village Car Service", $emailBody);
+	//echo $ret;
 	$good=true;
 }
 ?>

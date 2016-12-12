@@ -9,8 +9,9 @@ if(!empty($_POST) && $_POST['g-recaptcha-response'] == ''){
 }else if (!empty($_POST)){
 	
 	$emailBody = constructAccountEmail($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['acctType'], $_POST['addionalInfo']);
-	sendMail($sender, $_POST['email'], "Village Car Service - Account Creation Request", $emailBody);
-	sendMail($sender, $adminRecip, "Village Car Service - Account Creation Request", $emailBody);
+	$ret = sendMail($_POST['email'], "Account creation request - Village Car Service", $emailBody);
+	$ret = sendMail($adminRecip, "Account creation request - Village Car Service", $emailBody);
+
 	$good=true;
 }
 ?>
