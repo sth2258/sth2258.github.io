@@ -2,20 +2,15 @@
 require __DIR__ . '/twilio-php-master/Twilio/autoload.php';
 use Twilio\Rest\Client;
 
-function sendMail($from, $to, $subject, $message){
-	
-	
-	// To send HTML mail, the Content-type header must be set
-	$headers  = 'MIME-Version: 1.0' . "\r\n";
-	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+function sendMail($to, $subject, $message){
 
-	// Additional headers
-	//$headers .= 'To: ' . $to . "\r\n";
-	$headers .= 'From: ' . $from . "\r\n";
-	
+	$headers = "From: info@villagecarserviceliny.com\r\n";
+	$headers .= "Reply-To: info@villagecarserviceliny.com\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-	// Mail it
-	mail($to, $subject, $message, $headers);
+	$ret = mail($to, $subject, $message, $headers);
+	return $ret;
 }
 
 function constructContactEmail($name, $email, $phone, $addlInfo){
