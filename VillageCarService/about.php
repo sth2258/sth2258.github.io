@@ -33,7 +33,7 @@
 								</article>
 								<article id="employment">
 									<h2>Employment Oppurtunities</h2>
-									<p>We are always looking to expand our current fleet with new drivers, working a wide variety of times. We offer both full-time and part-time positions to work within your schedule. Whether you are a retiree or a college student, Village Car Service is always looking for new talent to meet it's always increasing demand. So, submit your information on our <a href="contact.html">Contact Us</a> page to get started with the application process today!</p>
+									<p>We are always looking to expand our current fleet with new drivers, working a wide variety of times. We offer both full-time and part-time positions to work within your schedule. Whether you are a retiree or a college student, Village Car Service is always looking for new talent to meet it's always increasing demand. So, submit your information on our <a href="contact.php">Contact Us</a> page to get started with the application process today!</p>
 									<p>All our professional drivers are required to have a background check, and random drug testing. They are also required to have a Nassau County TLC license, and any village or town licenses that are required.</p>
 								</article>
 								<article id="testimonials">

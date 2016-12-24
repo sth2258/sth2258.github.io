@@ -27,7 +27,7 @@
 								<ul>
 									<li><a href="#" class="button big icon fa-arrow-circle-right">Make a Reservation</a></li>
 									<li style="margin-bottom:0.5em"><a href="tel:+15167648888" class="button big alt icon fa-phone">Call Now</a></li>
-									<li><a href="about.html" class="button alt big icon fa-info-circle">About Us</a></li>
+									<li><a href="about.php" class="button alt big icon fa-info-circle">About Us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -42,11 +42,11 @@
 
 								<!-- Box -->
 									<section class="box feature">
-										<a href="about.html" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="about.php" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 										<div class="inner">
 											<header>
-												<h2><a style="text-decoration: none;color:#696969" href="about.html">About Us</a></h2>
-												<p><a style="text-decoration: none;color:#696969" href="about.html">Find out more about Village Car Service including information on how to join our team</a><br /></p>
+												<h2><a style="text-decoration: none;color:#696969" href="about.php">About Us</a></h2>
+												<p><a style="text-decoration: none;color:#696969" href="about.php">Find out more about Village Car Service including information on how to join our team</a><br /></p>
 											</header>
 										</div>
 									</section>
@@ -55,11 +55,11 @@
 
 								<!-- Box -->
 									<section class="box feature">
-										<a href="services.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="services.php" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 										<div class="inner">
 											<header>
-												<h2><a style="text-decoration: none;color:#696969" href="services.html">Services Provided</a></h2>
-												<p><a style="text-decoration: none;color:#696969" href="services.html">Learn more about what services we offer and how best we can help you meet your car service needs</a></p>
+												<h2><a style="text-decoration: none;color:#696969" href="services.php">Services Provided</a></h2>
+												<p><a style="text-decoration: none;color:#696969" href="services.php">Learn more about what services we offer and how best we can help you meet your car service needs</a></p>
 											</header>
 										</div>
 									</section>
